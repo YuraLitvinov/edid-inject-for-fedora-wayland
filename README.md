@@ -1,5 +1,5 @@
 # edid-inject-for-fedora-wayland
-How to
+How to inject EDID in Fedora 42 Gnome Wayland.
 I suceeded in doing this using AW EDID Editor. I also tried CRU, but it kept on breaking my monitor configuration.
 For this you need monitor-get-edid, monitor-parse-edid and aforementioned AW EDID Editor.
 Command order: 
