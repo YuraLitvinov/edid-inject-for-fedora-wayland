@@ -4,7 +4,7 @@ I suceeded in doing this using AW EDID Editor. I also tried CRU, but it kept on 
 For this you need monitor-get-edid, monitor-parse-edid and aforementioned AW EDID Editor.
 Command order: 
 1. sudo dnf install monitor-edid
-2. monitor-get-edid > name-of-your-choice'.bin # Without apostrophes! Or with them, but to the very end!
+2. monitor-get-edid > 'name-of-your-choice'.bin # Without apostrophes! Or with them, but to the very end!
 3. cat <name-of-your-choice>.bin | monitor-parse-edid # This command should output 
 	Name: W2242
 EISA ID: GSM5678
