@@ -6,7 +6,7 @@ Command order:
 1. sudo dnf install monitor-edid
 2. monitor-get-edid > <name-of-your-choice>.bin # Without angle brackets! Or with them, but to the very end!
 3. cat <name-of-your-choice>.bin | monitor-parse-edid # This command should output 
-Name: W2242
+	Name: W2242
 EISA ID: GSM5678
 EDID version: 1.3
 EDID extension blocks: 0
