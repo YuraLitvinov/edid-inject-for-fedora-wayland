@@ -34,7 +34,7 @@ Now in top-right corner select 'File', then 'Save as' and choose a name for your
 5. cat 'name-of-your-choice-AW'.bin | monitor-parse-edid # Check whether the configuration is set, if it's alright, then you can go further. 
 # Pay special attention To Modeline "YYYYxZZZZ" QQQ - these QQQ are your set bandwidth, they should not exceed the Max video bandwidth at any means!
 # Now check hsync vsync - if those are set as they should, in my case it's +hsync -vsync, then go further
-5. sudo mkdir /lib/firmare/edid/ #Create a directory where you will put this bin file 
+5. sudo mkdir /lib/firmware/edid/ #Create a directory where you will put this bin file 
 6. sudo cp 'name-of-your-choice-AW'.bin /lib/firmware/edid/ # Copy AW EDID Editor output to this directory you previously had created.
 7. xrandr --verbose # Use this to identify which port your monitor utilizes.
 8. sudo nano /etc/default/grub # Open the grub config and copy this: drm.edid_firmware=edid/'name-of-your-choice-AW'.bin video='port name':e #Without apostrophes for video='port name', obviously.
