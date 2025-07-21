@@ -37,7 +37,7 @@ Now in top-right corner select 'File', then 'Save as' and choose a name for your
 5. sudo mkdir /lib/firmware/edid/ #Create a directory where you will put this bin file 
 6. sudo cp 'name-of-your-choice-AW'.bin /lib/firmware/edid/ # Copy AW EDID Editor output to this directory you previously had created.
 7. xrandr --verbose # Use this to identify which port your monitor utilizes.
-8. sudo nano /etc/default/grub # Open the grub config and copy this: drm.edid_firmware=edid/'name-of-your-choice-AW'.bin video='port name':e #Without apostrophes for video='port name', obviously.
+8. sudo nano /etc/default/grub # Open the grub config and copy this insde GRUB_CMDLINE_LINUX. Make sure it's inside "...": drm.edid_firmware=edid/'name-of-your-choice-AW'.bin video='port name':e #Without apostrophes for video='port name', obviously.
 #If you have finished the step number 8, you can now proceed to step number 9
 9. sudo grub2-mkconfig -o /boot/grub2/grub.cfg # Update your grub to actually inject the EDID.
 9. reboot # Initialize the change. After rebooting, plug out your monitor and plug it back in if your screen isn't outputting anything, this helped me. 
